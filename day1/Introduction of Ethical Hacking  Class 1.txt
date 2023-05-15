@@ -1,0 +1,48 @@
+What is a Hacking 
+What is a Ethical Hacker 
+What is a Penetration Tester
+What is VAPT 
+---------------------------------------------------
+Types of Hacker:-
+1-Black Hat Hacker ->Hackers that seek to perform malicious activities.
+2-Gray Hat Hacker  ->Hackers that perform good or bad activities but do not have the permission of the organization they are hacking against.
+3-White Hat Hacker ->Ethical hackers; They use their skills to improve security by exposing vulnerabilities before malicious hackers.
+4-Script Kiddes	   ->Unskilled individual who uses malicious scripts or programs, such as a web shell, developed by others to attack computer systems and networks and deface websites.
+---------------------------------------------------
+Phases of Hacking:-
+
+1-Reconnaissance and Foot-printing  ->Gathering evidence about targets; There are two types of Recon:
+2-Network Scanning and Enumeration  ->Obtaining more in-depth information about targets.
+3-Gaining Access				    ->Attacks are leveled in order to gain access to a system.
+4-Maintaining Access 			    ->Items put in place to ensure future access.
+5-Clearing Tracks and Logs		    ->Steps taken to conceal success and intrusion; Not be noticed.
+---------------------------------------------------
+Threat Categories:-
+	
+Network Threats:-
+1-Information gathering
+2-Sniffing and eavesdropping
+3-DNS/ARP Poisoning
+4-MITM (Man-in-the-Middle Attack)
+5-DoS/DDoS
+6-Password-based attacks
+7-Firewall and IDS attack
+8-Session Hijacking
+
+---------------------------------------------------------------------------------------------------------
+Types of Penetration:-
+Black Box - Done without any knowledge of the system or network.
+White Box - When the attacker have complete knowledge of the system provided by the owner/target.
+Gray Box  - When the attacker has some knowledge of the system and/or network
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fundamental Security Concepts:-
+The whole principle is to avoid Theft, Tampering and Disruption of the systems through CIA Triad 
+1-Confidentiality
+2-Integrity  
+3-Availability
+-----------------------------------------
+
+
+
+
+
