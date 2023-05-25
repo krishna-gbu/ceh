@@ -1,0 +1,145 @@
+NETWORK SCANNING
+-------------------------------------------------------------------------------------
+Network Scanning - Network Scanning is a method of getting network information such as
+idenitification of hosts, port information, and services by scanning network and port.
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Scanning Methodology:-
+
+1-Check for live systems 			- Ping or other type of way to determine live hosts
+2-Check for open ports 			- Once you know live host IPs, scan them for listening ports
+3-Scan beyond IDS 				- If needed, use methods to scan beyond the detection systems; evade IDS using proxies, spoofing, fragmented packets and so on
+4-Perform banner grabbing 			- Grab from servers as well as perform OS fingerprinting (versions of the running services)
+5-Scan for vulnerabilities 		- Use tools to look at the vulnerabilities of open systems
+6-Draw network diagrams 			- Shows logical and physical pathways into networks
+7-Use proxies 					- Obscures efforts to keep you hidden
+8-Pentest Report 				- Document everything that you find 
+-------------------------------------------------------------------------------------
+Nmap:-  
+Port Scanning, Network Enumeration, Active & Passive Information Gathering, Banner Grabbing, 
+Vulnerability Scanning , OS Detection, etc.
+-------------------------------------------------------------------------------------
+What is Port ?
+Port In the internet protocol suite, a port is an endpoint of communication in an Operating System. 
+Specific Port No.ranging form 0 To 65536      
+1-Port 0 To 1023 		-well-known ports 
+2-Port 1024 To 49151 		-registred port:vendors use for application 
+3-Port 49152		 	-dynamic / private port
+-------------------------------------------------------------------------------------
+The TCP Three-way handshake:-
+SYN-------------------->  |Hi Packet					
+<----------------SYN-ACK  |Hello Packet
+ACK-------------------->  |Recived Packet
+-------------------------------------------------------------------------------------
+TCP and UDP 
+1-TCP - Transmissnion Control Protocol 
+2-UDP - User Datagram Protocol 
+TCP is connection oriented.
+UDP is a simpler, connectionless internet protocol. 
+-------------------------------------------------------------------------------------
+
+Types of Network scanning:-
+1-Network scanning 				– used to list IP address
+2-Port scanning		 			– used to list open ports and services 
+3-Vulnerability scanning 			– used to discover the presence of known Vulnerability
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+
+Host Discovery:-
+Tools:-
+1-Netdiscover
+2-arp-scan -l 
+3-Angry IP Scan
+4-Nmap
+------------------------------------------------------------------------------------
+Nmap Commands:-
+nmap --help 
+1-nmap 	scanme.nmap.org
+2-nmap 	-sV scanme.org.com  
+3-nmap 	-O scanme.org.com
+4-nmap 	-vv scanme.org.com
+5-nmap 	-p 22 scanme.org.com
+6-nmap 	-p 1-100 scanme.org.com
+7-nmap 	-p 21,22 scanme.org.com
+8-nmap 	-sU scanme.org.com
+9-nmap 	-sT scanme.org.com
+10-nmap 	-A scanme.org.com
+11-nmap 	--script vuln scanme.org.com
+12-nmap 	-Pn scanme.org.com
+13-nmap 	-F scanme.org.com
+14-nmap 	-p- scanme.org.com
+15-nmap 	-T0 to -T5 scanme.org.com
+------------------------------------------------------------------------------------
+Nmap Spoofing:-
+1-Decoy:
+nmap -Pn -D <spoofed IP> <target>
+This will perform a spoofed ping scan.
+------------------------------------------------------------------
+2-Source Address Spoofing:
+nmap -e <network interface> -S <IP source> <target>
+Example --> nmap -e eth0 -S 10.0.0.140 10.0.0.165
+-----------------------------------------------------------------
+3-MAC Address Spoofing:
+nmap --spoof-mac <MAC|Vendor> <target>
+Example --> nmap --spoof-mac Cis 10.0.0.140
+----------------------------------------------------------------------------------
+Firewall Evasion:-
+
+1-Multiple Decoy IP addresses:
+nmap -D RND:<number> <target>
+Example --> nmap -D RND:10 192.168.62.4
+-----------------------------------------------------------------
+2-IP Fragmentation:
+Used to scan tiny fragment packets
+nmap -f <target>
+-----------------------------------------------------------------
+3-Maximum Transmission Unit:
+This command is used to transmit smaller packets instead of sending one complete packet at a time.
+nmap -mtu 8 <target>
+Maximum Transmission Unit (-mtu) and 8 bytes of packets.
+-----------------------------------------------------------------------------------
+Timing & Performance:-
+1-Paranoid
+Paranoid (0) Intrusion Detection System evasion
+nmap <target> -T0
+-----------------------------------------------------------------
+2-Sneaky
+Sneaky (1) Intrusion Detection System evasion
+nmap <target> -T1
+-----------------------------------------------------------------
+3-Polite
+Polite (2) slows down the scan to use less bandwidth and use less target machine resources
+nmap <target> -T2
+-----------------------------------------------------------------
+4-Normal
+Normal (3) which is default speed
+nmap <target> -T3
+-----------------------------------------------------------------
+5-Agressive
+Aggressive (4) speeds scans; assumes you are on a reasonably fast and reliable network
+nmap <target> -T4
+-----------------------------------------------------------------
+6-Insane
+Insane (5) speeds scan; assumes you are on an extraordinarily fast network
+nmap <target> -T5
+------------------------------------------------------------------------------------
+Network scanning tools
+
+1-Nmap CLI
+2-Zenmap GUI
+3-Hping3
+4-Angry IP Scanner
+5-Advanced IP Scanner
+7-Pinkie
+-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

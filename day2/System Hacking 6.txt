@@ -1,0 +1,127 @@
+System Hacking:-    
+-------------------------------------------------------------------------
+Windows:-
+Types of users:-
+1. Administrator
+2. Standard 
+3. Child 
+4. Guest
+---------------------------------------------------------------------------
+Administrator User SID -0
+Normal User SID -1000
+-------------------------------------------------------------------------
+Linux:-			
+Types of user:-
+1. Root = ID - 0 
+2. Services User = ID - 1-999
+3. Normal User = ID - 1000-60000
+-------------------------------------------------------------------------------
+Root User ID -0
+Normal User ID -1000				
+-------------------------------------------------------------------------
+Windows Password:-
+                           
+SAM Database (Security Account Manager)
+SAM Database Location------->C://Windows/System32/Config/SAM
+SAM Hash Format------->NTLM.v2 (md5) (New Technology Lan Manager)
+Read SAM File-------------->Tool Name (Pwdump7)
+Windows Logs Save---------->Events Viewer
+------------------------------------------------------------------------
+Linux Information
+cat /etc/passwd------------------>User Information		
+sudo cat /etc/shadow------------------>User Password
+cat /var/logs-------------------->Linux Logs
+------------------------------------------------------------------------
+                       
+Password Attacks:-
+1-Non-electronic attacks -------->Social Engineering attacks - most effective.
+2-Active online attacks  -------->done by directly communicating with the victim's machine.
+3-Passive online attacks -------->Sniffing or man-in-the-middle attack.
+4-Offline attacks --------------->when the hacker steals a copy of the password file (Plaintext or Hash)
+-------------------------------------------------------------------------
+Non-electronic attacks:-
+1-Shoulder surfing
+2-Dumpster diving
+3-Guessing
+-------------------------------------------------------------------------
+Active Online Attack Tools:-
+
+Medusa
+Hydra
+Ncrack
+NBNSpoof
+Pupy
+Metasploit
+Responder
+------------------------------------------------------------------------
+Passive Online Attacks:-
+Services/Protocols that uses Clear text:
+
+Service -	Port
+FTP		20/21     
+TELNET	23				
+SMTP		25
+HTTP		80		
+POP3		110
+IMAPv4	143
+NetBIOS	139,445
+SNMP		161,162
+SQLnet	1521
+--------------------------
+Passive Tools:-
+1-Ettercap
+2-Wireshark
+3-Bettercap
+------------------------------------------------------------------------
+Offline attacks:-
+1-Dictionary Attack - uses a word list to attack the password. Fastest method of attacking.
+Wordlist -One popular example of wordlist is the rockyou.txt containing 14,341,564 unique passwords.
+RockYou Wordlist Location:-cat /usr/share/wordlist/rockyou.txt
+============================
+Tools for generate Wordlists:
+CeWL
+crunch                  
+-----------------------------------------------------------------------
+2-Brute force attack - Tries every combination of characters to crack a password.
+-----------------------------------------------------------------------
+3-Hybrid attack - Takes a dictionary attack and replaces characters 
+                  (such as a 0 for an o) or adding numbers to the end.
+-----------------------------------------------------------------------
+4-Rainbow tables - Uses pre-hashed passwords to compare against a password hash 
+                   Is faster because the hashes are already computed.
+-----------------------------------------------------------------------
+Tools for cracking password files (CLI):
+
+1-John the Ripper         			
+2-Hashcat						
+-----------------------------------------------------------------------
+Tools for cracking password files (GUI):
+fgdump  - Dump SAM databases on Windows machines.
+Pwdump7 - Dump SAM databases on Windows machines.
+chntpw  - Modify the SAM user account information through the CHNTPW.
+HirenBoot
+KonBoot
+------------------------------------------------------------------------
+Windows Security Architecture:-
+1-Authentication credentials stored in SAM file
+2-File is located at C:\windows\system32\config					
+
+3-Older systems use LM hashing. Current uses NTLM.v2 (MD5)
+------------------------------------------------------------------------
+LM Hashing:-	
+1-Splits the password up. If it's over 7 characters, it is encoded in two sections.
+2-If one section is blank, the hash will be AAD3B435B51404EE
+3-Easy to break if password is 7 characters or under because you can split the hash
+4-SAM file presents as UserName:SID:LM_Hash:NTLM_Hash:::
+------------------------------------------------------------------------
+Privilege Escalation:-
+Types of Privilege Escalation
+1-Vertical   - Lower-level user executes code at a higher privilege level (e.g.: common user to root/administrator).
+2-Horizontal - executing code at the same user level but from a location that would be protected from that access.
+------------------------------------------------------------------------
+
+
+
+
+
+

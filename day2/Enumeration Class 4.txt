@@ -1,0 +1,116 @@
+ENUMERATION:-
+-------------
+What is Enumeration ?
+						 
+Enumeration is the process of extraction username,machine name,network resources
+shares,and service form a system or network.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+->			CVE Details
+1-cve.mitre.org 				
+2-nvd.nist.gov				
+3-cvedetails.com					
+-----------------------------------------
+->			  Exploit 
+1-rapid7.com(By Metasploit Framwork)
+2-exploit-db.com			
+3-GitHub					
+--------------------------------------------------------------------------------
+Services and Ports to Enumerate:-
+
+1-TCP/UDP	Port No 53--------------------->DNS  (Domain Name system)zone Transfer
+2-TCP    	Port No 25--------------------->SMTP (Simple Mail Transfer Protocol)
+3-TCP    	Port No 137-139--------------------->NetBIOS (Network Baisc Input Output System)
+4-TCP    	Port No 22--------------------->SSH (Secure shell)
+5-TCP    	Port No 23--------------------->Telnet 
+6-TCP    	Port No 21--------------------->FTP (File Transfer Protocal)
+7-TCP/UDP	Port No 445--------------------->SMB (Server Message Block)
+8-TCP		Port No 80--------------------->HTTP (Hyper Text Transfer Protocol)
+9-TCP		Port No 443-------------------->HTTPS (Hyper Text Transfer Protocol Secure)
+---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+Other Enumeraction Techniques:-
+
+1-Unix/Linux ----------> rusers,rwho,finger.
+rusers - who is logged in to machines on local network
+rwho   - who is logged in on local machines
+finger - user information lookup program		
+----------------------------------------------------------------------------------
+2-SMB -------->enum4linux 
+----------------------------------------------------------------------------------
+Linux & Windows Scripts:-
+
+Linux - LinEnum
+Windows - WinEnum
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
