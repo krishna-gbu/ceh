@@ -9,3 +9,7 @@ https://drive.google.com/file/d/1lqLF0pMgzAJb36S2u0IiBEr8hwtidhjc/view?usp=shari
 https://drive.google.com/file/d/1Ut2ZRoZuGBMAItkwP3OwiGnn1Sw5s6Sd/view?usp=sharing
 
 
+## day3
+https://drive.google.com/file/d/1biWc1jnkfU0Kb2-WIM67NPi-yuNiglrv/view?usp=sharing
+
+https://drive.google.com/file/d/1lCzMApePZpNbvDLJuIkyuOMdS6RlOZax/view?usp=sharing
