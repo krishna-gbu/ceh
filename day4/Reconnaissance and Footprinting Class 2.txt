@@ -1,0 +1,322 @@
+Reconnaissance and Footprinting:-
+
+Footprinting:-
+Footprinting is a part of reconnaissance process which is used for 
+gathering possible information about a target computer system or network.
+-----------------------------------------------------------------------------------
+Footprinting Types: Active and Passive:-
+
+1-Active - requires attacker to touch the device or network
+Social engineering and other communication that requires interaction with target.
+-----------------------------------------------------------------------------------
+2-Passive - measures to collect information from publicly available sources
+Websites, DNS records, business information databases.
+-----------------------------------------------------------------------------------
+
+During this phase, a hacker can collect the following information (only high-level information):
+
+1-Domain name
+2-IP Addresses
+3-Employee information
+4-Phone numbers
+5-E-mails
+6-Job Information
+-----------------------------------------------------------------------------------
+Footprinting Objectives:-
+
+Network:-
+
+1-DNS
+2-IP networks
+3-Acessible Systems
+4-Websites
+5-Access Control
+6-VPN Endpoints
+7-Firewall vendors
+8-IDS Systems
+9-Routing/Routed Protocols
+10-Phone System (Analog/VoIP)
+----------------------------------------------------------------------------------
+Organization:-
+
+1-Org Structure
+2-Websites
+3-Phone Numbers
+4-Directory Information
+5-Office Locations
+6-Company History
+7-Business Associations
+----------------------------------------------------------------------------------
+Hosts:-
+
+1-Listening Services
+2-Operating System Versions
+3-Internet Reachability
+4-Enumerated Information
+5-SNMP Info
+6-Users/Groups
+7-Mobile Devices
+----------------------------------------------------------------------------------
+Google search | Google dorks:-
+
+1-filetype: 	- looks for file types
+2-index of 	- directory listings
+3-info: 		- contains Google's information about the page
+4-intitle: 	- string in title
+5-inurl: 		- string in url
+6-link: 		- finds linked pages
+7-related: 	- finds similar pages
+8-site: 		- finds pages specific to that site
+-----------------------------------------------------------------------------------
+
+Website Footprinting:-
+
+Web mirroring | Website Cloning - allows for discrete testing offline
+
+1-HTTrack - you can use the CLI version or Web Interface version
+2-Wget - Linux command
+3-wget -i http://hackthissite.org/
+4-Black Widow (github)
+5-WebRipper
+6-FOCA
+7-Backstreet Browser
+
+Archive.org / Wayback machine
+Provides cached websites from various dates which possibly have sensitive information that has been now removed.
+Wayback Machine -> Google.com
+
+------------------------------------------------------------------------------------
+
+Email Footprinting:-
+
+Tracing an email using email header can reveal the following:-
+1-Destination address
+2-Sender IP Address
+3-Sender Mail Address
+4-Time & Date information 
+
+1-EmailTrackerPro:- is a Windows software that trace an email back to its true point of origin:
+--------------------------------------------------------------------------------------
+
+DNS Footprinting:-
+
+Ports
+
+Name lookup 		- UDP 53
+Zone transfer 		- TCP 53
+
+DNS Record Types:-
+
+Name		    Description					Purpose
+A			Address				-	Maps an hostname to an IPv4 address
+AAAA		 	IPv6 Address			-	Maps an hostname to an IPv6 Address
+NS			Nameserver				-	Lists the nameservers for a namespace
+MX			Mail Exchange			-	Lists email servers
+CNAME			Canonical Name			-	Maps a name to an A reccord
+SRV			Service				-	Points to a specific service
+SOA			Start of Authority	 	-	Indicates the authoritative NS for a namespace
+PTR			Pointer				-	Maps an IP to a hostname
+
+
+---------------------------------------------------------------------------------------
+
+IP Address Management:-
+
+1-ARIN - North America
+2-APNIC - Asia Pacific
+3-RIPE - Europe, Middle East
+4-LACNIC - Latin America
+5-AfriNIC - Africa
+
+--------------------------------------------------------------------------------------
+
+1-Whois - obtains registration information for the domain from command line or web interface.
+on Kali, whois is pre-installed on CLI; e.g: whois google.com)
+on Windows, you can use SmartWhois GUI software to perform a whois, or any website like domaintools.com.
+
+--------------------------------------------------------------------------------------
+
+2-Nslookup - Performs DNS queries; (nslookup is pre-installed on Kali Linux)
+nslookup www.hackthissite.org
+----------------------------
+Server:         192.168.63.2
+Address:        192.168.63.2#53
+
+Non-authoritative answer:
+Name:   www.hackthissite.org
+Address: 137.74.187.103
+Name:   www.hackthissite.org
+Address: 137.74.187.102
+Name:   www.hackthissite.org
+Address: 137.74.187.100
+Name:   www.hackthissite.org
+Address: 137.74.187.101
+Name:   www.hackthissite.org
+Address: 137.74.187.104
+----------------------------
+First two lines shows my current DNS server; The IP addresses returned are 'A record', 
+meaning is the IPvA address of the domain; Bottom line NsLookup queries the specified 
+DNS server and retrieves the requested records that are associated with the domain.
+
+The following types of DNS records are especially useful to use on Nslookup:-
+-----------------------------------------------------------------------------------------
+
+Type		Description
+----		-----------
+A			the IPv4 address of the domain
+---------------------------------------------------------------------------------
+AAAA		the domain’s IPv6 address
+---------------------------------------------------------------------------------
+CNAME		the canonical name — allowing one domain name to map on to another. 
+			This allows more than one website to refer to a single web server.
+---------------------------------------------------------------------------------
+MX			the server that handles email for the domain.
+---------------------------------------------------------------------------------
+NS			one or more authoritative name server records for the domain.
+---------------------------------------------------------------------------------
+TXT			a record containing information for use outside the DNS server. 
+			The content takes the form name=value. 
+			This information is used for many things including authentication schemes such as SPF and DKIM.
+---------------------------------------------------------------------------------
+
+nslookup 
+server <IP Address>
+set type=<DNS type>
+<target domain>
+
+---------------------------------------------------------------------------------
+nslookup -------------------->Command
+> set type=AAAA                                                                                                                                            
+> www.hackthissite.org
+Server:         192.168.63.2                                                                                                                               
+Address:        192.168.63.2#53                                                                                                                            
+                                                                                                                                                          
+Non-authoritative answer:                                                                                                                                  
+Name:   www.hackthissite.org                                                                                                                               
+Address: 2001:41d0:8:ccd8:137:74:187:103                                                                                                                   
+Name:   www.hackthissite.org                                                                                                                               
+Address: 2001:41d0:8:ccd8:137:74:187:102                                                                                                                   
+Name:   www.hackthissite.org                                                                                                                               
+Address: 2001:41d0:8:ccd8:137:74:187:101                                                                                                                   
+Name:   www.hackthissite.org                                                                                                                               
+Address: 2001:41d0:8:ccd8:137:74:187:100
+Name:   www.hackthissite.org
+Address: 2001:41d0:8:ccd8:137:74:187:104
+--------------------------------------------------------------------------------
+
+3-Dig - unix-based command like nslookup
+dig <target>
+--------------------------------------------------------------------------------
+dig www.hackthissite.org  -------------->Command
+
+; <<>> DiG 9.16.2-Debian <<>> www.hackthissite.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51391
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; MBZ: 0x0005, udp: 4096
+;; QUESTION SECTION:
+;www.hackthissite.org.          IN      A
+
+;; ANSWER SECTION:
+www.hackthissite.org.   5       IN      A       137.74.187.104
+www.hackthissite.org.   5       IN      A       137.74.187.101
+www.hackthissite.org.   5       IN      A       137.74.187.100
+www.hackthissite.org.   5       IN      A       137.74.187.102
+www.hackthissite.org.   5       IN      A       137.74.187.103
+
+;; Query time: 11 msec
+;; SERVER: 192.168.63.2#53(192.168.63.2)
+;; WHEN: Tue Aug 11 15:05:01 EDT 2020
+;; MSG SIZE  rcvd: 129
+-----------------------------------------------------------------------------------
+
+To get email records specify -t MX
+dig <target> -t MX
+-----------------------------------------------------------------------------------
+
+Network Footprinting:-
+
+1-Nmap 		- Network exploration tool and security / port scanner
+2-Masscan 		- Fast scan of the Internet
+3-Nslookup		- query Internet name servers interactively
+4-Traceroute 	- print the route packets trace to network host
+5-Netdiscover	- active/passive ARP reconnaissance tool 
+---------------------------------------------------------------------------------
+
+Footprinting Search Engines:-
+
+1-Google
+2-Yahoo
+3-Bing
+4-Shodan.io
+5-Duck Duck Go  
+--------------------------------------------------------------------------------
+Footprinting Web Services:-
+
+1-Net craft
+2-Archive.org
+3-Whois.com
+4-Wappalyzer
+5-Pentest-tools.com
+6-OSINT Framework
+-------------------------------------------------------------------------------
+Footprinting Social Networking Sites:-
+
+1-Facebook
+2-Instagram
+3-LinkedIn
+4-Twitter
+ 					  
+------------------------------------------------------------------------------
+
+Foot Printing Tools:-
+Most Advanced Open Source Intelligence (OSINT) Tools.
+
+1-Whois 
+2-Theharvester 
+3-Maltego
+4-Metagoofil
+5-Dmitry
+6-Th3inspector
+7-Infoga 			
+8-Spider Foot
+9-Amass 
+10-ReconSpider
+11-Sherlock
+----------------------------------------------------------------------------
+---Top 367 Information Gathering Tools---
+https://awesomeopensource.com/projects/information-gathering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

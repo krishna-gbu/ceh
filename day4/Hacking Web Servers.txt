@@ -1,0 +1,65 @@
+Hacking Web Servers:-
+-------------------
+Web Server Attack Methodology:-
+Information Gathering - Internet searches, whois, reviewing robots.txt
+
+Web Server Footprinting - banner grabbing
+
+Tools:-
+
+Netcraft
+HTTPRecon
+theHarvester
+ID Server
+HTTPrint
+
+nmap
+nmap --script http-trace -p80 localhost
+Detects vulnerable TRACE method
+nmap --script http-google-email <host>
+Lists email addresses
+nmap --script hostmap-* <host>
+dDiscovers virtual hosts on the IP address you are trying to footprint; * is replaced by online db such as IP2Hosts
+nmap --script http-enum -p80 <host>
+Enumerates common web apps
+-----------------------------------------------------------------------------------------
+
+Website Mirroring - brings the site to your own machine to examine structure, etc.
+Tools:-
+
+Wget
+BlackWidow
+HTTrack
+WebCopier Pro
+Web Ripper
+SurfOffline
+
+Vulnerability Scanning - scans web server for vulnerabilities
+Tools
+Nessus
+Nikto - specifically suited for web servers; still very noisy like Nessus
+--------------------------------------------------------------------------------------
+Web Server Architecture:-
+1-Most Popular Servers - Apache,Apache Tomcat, Microsoft IIS and Nginx
+2-HTML - markup language used to display web pages
+
+--------------------------------------------------------------------------------
+Web Server Methodology
+1-Information Gathering
+2-Web Server Footprinting/banner grabbing
+3-Enumeraction Web Server Using Nmap
+4-Website Mirroring
+5-Finding Default Ceredential of Web Server 
+6-Finding Hidden Directory Listing of web Server ----->Tools > gobuster,dirsearch,dirb,ffuf,feroxbuster.
+--------------------------------------------------------------------------------
+Web Server Attacks:-
+1-Misconfiguration Attack
+2-Password Attack
+3-DoS/DDoS
+
+--------------------------------------------------------------------------------
+Tools:-
+
+Brutus - brute force web passwords of HTTP
+Hydra - network login cracker
+Metasploit
