@@ -25,3 +25,9 @@ https://drive.google.com/file/d/1MwTLEJJfpJABcPkMNa2w8wVG2lfrTLX2/view?usp=shari
 https://drive.google.com/file/d/1OyrWKTJak9h0XbakUOt3AwvJ7UzDzrc6/view?usp=sharing
 
 https://drive.google.com/file/d/1GRit4A6Hq1uXwS9jwT3iEwB-pj9g1nio/view?usp=sharing
+
+## day6
+
+https://drive.google.com/file/d/1l0pNYCKaaRcG7TLGtOkpoayY-SngI7b4/view?usp=sharing
+
+https://drive.google.com/file/d/1WnoXmEZ_OSXMfyJrju3eT5mrFCiJpubD/view?usp=sharing
