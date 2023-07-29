@@ -31,3 +31,12 @@ https://drive.google.com/file/d/1GRit4A6Hq1uXwS9jwT3iEwB-pj9g1nio/view?usp=shari
 https://drive.google.com/file/d/1l0pNYCKaaRcG7TLGtOkpoayY-SngI7b4/view?usp=sharing
 
 https://drive.google.com/file/d/1WnoXmEZ_OSXMfyJrju3eT5mrFCiJpubD/view?usp=sharing
+
+## day7
+
+https://drive.google.com/file/d/1YKom5x98RO0J2uIoFEfEx_STbonpIeqT/view?usp=sharing
+
+https://drive.google.com/file/d/1Ndwzqwhi-xrylp1fvfDC-RCzIqe-mdsi/view?usp=sharing
+
+## day8
+
