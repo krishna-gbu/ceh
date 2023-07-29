@@ -1,0 +1,72 @@
+Web Application Penetration Testing:-
+
+					Web Application Penetration Testing
+					
+1. Web Penetration Tester Roadmap:-
+https://drive.google.com/file/d/1HHc-6O1u_PtP4W5acZMMqVf_h_2a5PIo/view
+
+2. Web Penetration Testing Courses Free:-
+https://www.classcentral.com/subject/pentesting
+
+3. Web Application Penetration Testing Checklist:-
+https://bit.ly/3zJp4SM
+
+4. HTTP response status codes:-
+https://bit.ly/3JMeAH6
+-------------------------------------------------------------------------------------------------
+					    
+					    BugBug Bounty Roadmaps
+					    
+1. Roadmap Web, Mobile, Network & Infrastructure, SSRF,Bug Hunter’s, Server_Side, Nmap.
+https://github.com/1ndianl33t/Bug-Bounty-Roadmaps 
+
+2. BugBug Bounty Roadmaps:-
+https://drive.google.com/file/d/1H2NiJKNbtdcwpfY95SgDnM5IpKzYKl-k/view
+
+3. BUG BOUNTY HUNTING (METHODOLOGY, TOOLKIT, TIPS & TRICKS, Blogs
+https://bit.ly/3p9DAye
+
+4. Bug Bounty Checklist for Web App
+https://bit.ly/3vPJ3On
+
+5. How To Hunt 
+https://github.com/KathanP19/HowToHunt/tree/master/CheckList
+
+-------------------------------------------------------------------------------------------------
+						
+				     Web Applicatio & Bug Bounty Tools
+						
+1. Awesome Bug Bounty Tools:-
+https://github.com/0xJin/awesome-bugbounty-builder
+
+2. Resources-for-Beginner-Bug-Bounty-Hunters Tools:-
+https://bit.ly/3vV5BNP
+
+3. Best ever Tools 🧰 for Bug Bounty Hunters:-
+https://bit.ly/3A8EcdW
+
+4. Web Attack Cheat Sheet
+https://github.com/riramar/Web-Attack-Cheat-Sheet#Targets
+
+-------------------------------------------------------------------------------------------------
+
+					Web Penetration Testing Interview
+Note:
+1. Web Penetration Testing Interview Questions & Answers:-
+https://bit.ly/3bGL351
+
+2. Top 65 Web Security Interview Questions
+https://www.fullstack.cafe/interview-questions/web-security
+
+
+
+
+
+
+
+
+
+
+
+
+

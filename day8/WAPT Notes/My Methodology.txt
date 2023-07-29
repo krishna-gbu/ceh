@@ -1,0 +1,19 @@
+My Methodology
+Information gathering Part:-
+------------------------------------------------------
+1.  Find IP Address 
+2.  Find Target Sub Domain 
+3.  Find WebSite Technology  
+4.  Find Hidden Directory
+5.  Perameter Fuzzing
+6.  Check Http & Https version 
+7.  Source Code View by Target WebSite 
+8.  Find WebSite Cpannel 
+9.  Find SSL/TLS Version 
+10. Find WebSite Input Field 
+11. Find WebSite Login Page
+12. Check Robots.txt & Sitemap.xml
+13. Google Dorking & Github Recon ---->Tool Name: grep.app
+14. Burp Suit Through Banner Grabbing 
+------------------------------------------------------
+ 

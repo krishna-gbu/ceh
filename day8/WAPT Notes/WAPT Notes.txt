@@ -1,0 +1,198 @@
+Web Application Penetration Testing:-
+-----------------------------------------------------------------------------------
+1. What is WAPT ?
+2. What is VAPT ? 
+-----------------------------------------------------------------------------------
+3. What is Web Server ?
+					Web server software
+Web Servers List:-
+a. Apache web server – the HTTP web server
+b. Apache Tomcat
+c. Microsoft’s Internet Information Services (IIS) Windows Server
+d. Nginx web server
+e. lighttpd
+f. Jigsaw
+g. Klone
+h. Abyss web server
+i. Oracle Web Tier
+j. X5 (Xitami) web server
+k. Zeus web server
+----------------------------------------------------------------
+Learn For Web Server:-
+https://www.webdevelopersnotes.com/web-servers-list
+https://en.wikipedia.org/wiki/Comparison_of_web_server_software
+					
+----------------------------------------------------------------------------------
+4- What is Web Server Architecture ?
+Client Side 
+Server Side 
+Backend Storage and Database
+client Site Language's --->Html,CSS,Javascript 
+Server Side Language's --->Php,Java,Python,Node.js,ASP.Net  
+BackAnd Storage and Database --->DBMS Example:Mysql, Postgresql, Oracl, Mssql
+----------------------------------------------------------------
+---------------------------------------------------------------------------------
+DBMS Full From  ---> Database Management System
+Sql Full From   ---> Structured Query Language
+Http Full From  ---> Hyper Test Transfer Protocal 
+Https Full From ---> Hyper Test Transfer Protocal Secure
+SSl Full From   ---> Secure Sockets Layer
+----------------------------------------------------------------
+5-What is Cookies ?
+----------------------------------------------------------------
+1-HTTP Request Protocal ----->Request and Response
+2-HTTPS Request Headers and Response Header
+3-User-Agent Header (Means) ----> Web Browser Version 
+4-Referer Header -----> It Will Provide the url of the web site form which you are redirecting to other web page other web site.  
+5-Content-Type Header ------> The Type of content or document the browser is asking from the server. 
+6-Cookie Header ---->	This header stored the value of cookies stored in the browser. 
+--------------------------------------------------------------------
+Status Codes:-
+a. 1xx informational response  	 – the request was received, continuing process
+b. 2xx successful 		      – the request was successfully received, understood, and accepted
+c. 3xx redirection               – further action needs to be taken in order to complete the request
+d. 4xx client error              – the request contains bad syntax or cannot be fulfilled
+e. 5xx server error              – the server failed to fulfil an apparently valid request
+
+Important Status Codes:-
+
+			    1xx informational response
+			    
+a. 100 Continue
+b. 101 Switching Protocols
+c. 102 Processing (WebDAV; RFC 2518)
+--------------------------------
+ 					2xx success
+
+a. 200 OK
+b. 201 Created
+c. 203 Non-Authoritative Information (since HTTP/1.1)
+d. 204 No Content
+--------------------------------
+					3xx redirection
+
+a. 300 Multiple Choices
+b. 301 Moved Permanently
+c. 302 Found (Previously "Moved temporarily")
+d. 304 Not Modified (RFC 7232)
+e. 305 Use Proxy (since HTTP/1.1)
+f. 307 Temporary Redirect (since HTTP/1.1)
+g. 308 Permanent Redirect (RFC 7538)
+--------------------------------
+					4xx client errors
+					
+a. 400 Bad Request
+b. 401 Unauthorized (RFC 7235)
+c. 402 Payment Required
+d. 403 Forbidden
+e. 404 Not Found
+f. 408 Request Timeout
+g. 429 Too Many Requests (RFC 6585)
+--------------------------------
+					5xx server errors
+
+a. 500 Internal Server Error
+b. 501 Not Implemented
+c. 502 Bad Gateway
+d. 503 Service Unavailable
+e. 504 Gateway Timeout
+f. 505 HTTP Version Not Supported
+--------------------------------
+HTTP Status Codes Web Site:-
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+--------------------------------------------------------------------
+https://securityheaders.com/
+HTTP Response Header:-
+1. HTTP Version 
+2. Status Code
+3. Server: Name and Version 
+4. Date: Server Side time sempt (GMT: Green Which Mean Time ) 
+5. Set-Cookie:	Server will provide the cookies peremeters and there values with the help of this header.
+6. Expires: The server will provide you the expiry time of the session.
+---------------------------------------------------------------------
+Wep Application Penetration Testing Methodology:-
+1 Permission 
+a. RoE Rule Of Engagement (testing will have a mitting with target company and will deside the rules of testing which will we documented in the from of a documnets name rules of engement
+b. Inscope and out of scope details are desided and return in this document.
+c. Time Lines of the Engagement are desided
+d. Tools and Techniques of engament are also desided 
+e. Wether the assesment will we internel and externel will be desided here.
+f. Type of Testing is desided weather the engagement is a part of (Black Box Testing) (White Box Testing) (Gray Box Testing)
+g. Another documets is created which is called NOC this documents will be singn by both partys which will save them from legal issues   
+---------------------------------------------------------------------
+2. Reconnaissance and Footprinting 
+a. IP Address
+b. Sub Domain 
+c. Technologys for Web Site ---> netcraft , wappalayzer , for linux->whatweb 
+d. Sub Directory (Enumeration) ---> gobuster,dirsearch,fuzz,waff,dirbuster,dirb
+e. Files on the Server 
+--------------------------------------------------------------------- 
+3. Network Scanning and Enumration
+4. Gaining Access
+5. Maintaining Access
+6. Reporting 
+--------------------------------------------------------------------- 
+Vulnerability:-
+1. Sensitive Data Exposure:-
+a. Source Code Review (Find:- Comment Out in source Code,Img Tag, href Tag) (comment colour green)    
+b. Robots.txt , Sitemap.xml
+c. Github recon by (grep.aap)
+d. Recon by Google Dork 
+--------------------------------------------------------------------- 
+2. File Upload Vulnerability:-
+Web Server File Extenstion
+a. Apache:-  (.php)
+b. Microsoft IIS:- (.asp) (.aspx)
+c. Nginx: (.php)
+-----------------
+PHP File Extension:- 
+.php
+.phtml
+.php3
+.php4
+.php5
+.php7
+.phps
+.php-s
+.pht
+.phar
+1. Filtering White Listing 
+2. Filtering Black Listing 
+---------------------------------------
+List_of_file_signatures 
+a. https://en.wikipedia.org/wiki/List_of_file_signatures 
+--------------------------------------------------------------------- 
+Note:- Web shell are the malicius file which contains the code for reverse shell. 
+Note:- Command shell in contain the malicius code to execute command on the web server.
+---------------------------------------------------------------------  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

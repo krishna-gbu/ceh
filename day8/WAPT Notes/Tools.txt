@@ -1,0 +1,21 @@
+Web Application Penetration Testing 
+
+1. Sub Domain Finder
+a. Sublist3r 
+b. Subfinder
+c. Knock.py
+d. amass
+------------------------------------
+2. Fuzzing Hidden Directory
+a. ffuf
+b. gobuster
+c. wfuzz
+d. dirb
+e. dirsearch 
+------------------------------------
+3. Port Scan
+a. nmap 
+b. masscan 
+c. naabu
+d. rustscan 
+------------------------------------
